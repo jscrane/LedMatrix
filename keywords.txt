@@ -18,7 +18,8 @@ set				KEYWORD2
 clr				KEYWORD2
 bitmap				KEYWORD2
 refresh				KEYWORD2
-
+next				KEYWORD2
+prev				KEYWORD2
 
 #######################################
 # Constants (LITERAL1)
