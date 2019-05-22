@@ -11,5 +11,5 @@ GPIOs. Supports square LEDs up to 8x8.
 ## Other
 Prototype 7x7 assembled on stripboard:
 
-![](extras/front.jpg)
-![](extras/back.jpg)
+![](extras/front.png)
+![](extras/back.png)
