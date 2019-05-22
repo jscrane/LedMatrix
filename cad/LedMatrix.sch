@@ -1404,4 +1404,8 @@ Wire Wire Line
 Connection ~ 5050 6300
 Wire Wire Line
 	5050 6300 5050 6650
+Text Notes 7550 7500 0    50   ~ 10
+Simple 8x8 LED Matrix
+Text Notes 10650 7650 0    50   ~ 10
+1.0
 $EndSCHEMATC
