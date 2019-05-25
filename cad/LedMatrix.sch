@@ -1137,7 +1137,7 @@ U 1 1 5CF5CED9
 P 1850 3850
 F 0 "J1" H 1744 4335 50  0000 C CNN
 F 1 "Anodes" H 1744 4244 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Horizontal" H 1850 3850 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 1850 3850 50  0001 C CNN
 F 3 "~" H 1850 3850 50  0001 C CNN
 	1    1850 3850
 	-1   0    0    -1  
@@ -1196,7 +1196,7 @@ U 1 1 5CFEB807
 P 5200 7350
 F 0 "J2" V 5272 7280 50  0000 C CNN
 F 1 "GNDs" V 5363 7280 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Horizontal" H 5200 7350 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 5200 7350 50  0001 C CNN
 F 3 "~" H 5200 7350 50  0001 C CNN
 	1    5200 7350
 	0    -1   1    0   
