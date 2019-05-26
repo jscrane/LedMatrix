@@ -5,10 +5,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "8x8 LED Matrix"
+Date "2019-05-25"
+Rev "1.0"
+Comp "Stephen Crane"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -1404,8 +1404,4 @@ Wire Wire Line
 Connection ~ 5050 6300
 Wire Wire Line
 	5050 6300 5050 6650
-Text Notes 7550 7500 0    50   ~ 10
-Simple 8x8 LED Matrix
-Text Notes 10650 7650 0    50   ~ 10
-1.0
 $EndSCHEMATC
