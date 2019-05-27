@@ -1,7 +1,7 @@
 #include <SimpleTimer.h>
 #include <LedMatrix.h>
 
-const uint8_t anodes[] = { 9, 14, 15, 16, 17, 18, 10 };
+const uint8_t anodes[] = { 10, 18, 17, 16, 15, 14, 9 };
 const uint8_t gnds[] = { 8, 7, 6, 5, 4, 3, 2 };
 
 LedMatrix leds(sizeof(anodes), anodes, gnds);
@@ -22,16 +22,15 @@ const int nc = sizeof(chars)/sizeof(chars[0]);
 
 void scroll() {
 	static int ci, off;
-	const int s = leds.side();
 
 	int ni = ci+1;
 	if (ni == nc) ni = 0;
 
 	const char_t &c = chars[ci], &n = chars[ni];
 	char_t d = { 0, 0, 0, 0, 0, 0, 0};
-	for (int i = 0; i < s; i++) {
+	for (int i = 0; i < leds.side(); i++) {
 		int j = 0;
-		for (int oj = off; oj < s; j++, oj++) {
+		for (int oj = off; oj < leds.side(); j++, oj++) {
 			uint8_t a = (1 << oj), b = (1 << j);
 			if (c[i] & a)
 				d[i] |= b;
@@ -46,19 +45,13 @@ void scroll() {
 				d[i] &= ~b;
 		}
 	}
-	if (++off == s) {
+	if (++off == leds.side()) {
 		off = 0;
 		if (++ci == nc)
 			ci = 0;
 	}
 
-	// reverse image for output
-	char_t r = { 0, 0, 0, 0, 0, 0, 0};
-	for (int i = 0; i < s; i++)
-		for (int j = 0; j < s; j++)
-			if (d[i] & (1 << j))
-				r[i] |= (1 << (s-j-1));
-	leds.bitmap(r);
+	leds.bitmap(d);
 }
 
 void setup() {
