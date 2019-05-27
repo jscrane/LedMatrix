@@ -8,21 +8,21 @@ public:
 	void begin();
 
 	void clear() {
-		for (int i = 0; i < side; i++)
-			state[i] = 0;
+		for (int i = 0; i < _side; i++)
+			_state[i] = 0;
 	}
 
 	inline void set(uint8_t r, uint8_t c) {
-		state[r] |= (1 << c);
+		_state[r] |= (1 << c);
 	}
 
 	inline void clr(uint8_t r, uint8_t c) {
-		state[r] &= ~(1 << c);
+		_state[r] &= ~(1 << c);
 	}
 
 	void bitmap(const uint8_t b[]) {
-		for (int i = 0; i < side; i++)
-			state[i] = b[i];
+		for (int i = 0; i < _side; i++)
+			_state[i] = b[i];
 	}
 
 	void refresh() {
@@ -30,19 +30,22 @@ public:
 			_refresh();
 	}
 
-	inline uint8_t prev(uint8_t i) {
-		return i == 0? side-1: --i;
+	inline uint8_t prev(uint8_t i) const {
+		return i == 0? _side-1: --i;
 	}
 
-	inline uint8_t next(uint8_t i) {
-		return ++i < side? i: 0;
+	inline uint8_t next(uint8_t i) const {
+		return ++i < _side? i: 0;
 	}
 
+	inline uint8_t side() const {
+		return _side;
+	}
 private:
 	void _refresh();
 
-	uint8_t sources[8], sinks[8];
-	uint8_t side;
-	uint8_t state[8];
+	uint8_t _sources[8], _sinks[8];
+	const uint8_t _side;
+	uint8_t _state[8];
 };
 #endif
