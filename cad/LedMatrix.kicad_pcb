@@ -2828,12 +2828,12 @@
     )
   )
 
-  (module MountingHole:MountingHole_2.7mm_M2.5_Pad (layer F.Cu) (tedit 5D00A8FC) (tstamp 5D00ABBA)
+  (module MountingHole:MountingHole_2.7mm_M2.5_Pad (layer F.Cu) (tedit 5D08A179) (tstamp 5D00ABBA)
     (at 58.42 29.21)
     (descr "Mounting Hole 2.7mm, M2.5")
     (tags "mounting hole 2.7mm m2.5")
     (attr virtual)
-    (fp_text reference REF** (at 0 -3.7) (layer F.SilkS)
+    (fp_text reference REF** (at 0 -3.7) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value MountingHole_2.7mm_M2.5_Pad (at 0 3.7) (layer F.Fab) hide
@@ -2847,12 +2847,12 @@
     (pad 1 thru_hole circle (at 0 0) (size 5.4 5.4) (drill 2.7) (layers *.Cu *.Mask))
   )
 
-  (module MountingHole:MountingHole_2.7mm_M2.5_Pad (layer F.Cu) (tedit 5D00A8F5) (tstamp 5D00AC13)
+  (module MountingHole:MountingHole_2.7mm_M2.5_Pad (layer F.Cu) (tedit 5D08A164) (tstamp 5D00AC13)
     (at 58.42 85.09)
     (descr "Mounting Hole 2.7mm, M2.5")
     (tags "mounting hole 2.7mm m2.5")
     (attr virtual)
-    (fp_text reference REF** (at 0 -3.7) (layer F.SilkS)
+    (fp_text reference REF** (at 0 -3.7) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value MountingHole_2.7mm_M2.5_Pad (at 0 3.7) (layer F.Fab) hide
@@ -2866,12 +2866,12 @@
     (pad 1 thru_hole circle (at 0 0) (size 5.4 5.4) (drill 2.7) (layers *.Cu *.Mask))
   )
 
-  (module MountingHole:MountingHole_2.7mm_M2.5_Pad (layer F.Cu) (tedit 5D00A907) (tstamp 5D00AC22)
+  (module MountingHole:MountingHole_2.7mm_M2.5_Pad (layer F.Cu) (tedit 5D08A16B) (tstamp 5D00AC22)
     (at 127 85.09)
     (descr "Mounting Hole 2.7mm, M2.5")
     (tags "mounting hole 2.7mm m2.5")
     (attr virtual)
-    (fp_text reference REF** (at 0 -3.7) (layer F.SilkS)
+    (fp_text reference REF** (at 0 -3.7) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value MountingHole_2.7mm_M2.5_Pad (at 0 3.7) (layer F.Fab) hide
@@ -2885,12 +2885,12 @@
     (pad 1 thru_hole circle (at 0 0) (size 5.4 5.4) (drill 2.7) (layers *.Cu *.Mask))
   )
 
-  (module MountingHole:MountingHole_2.7mm_M2.5_Pad (layer F.Cu) (tedit 5D00A901) (tstamp 5D00AC31)
+  (module MountingHole:MountingHole_2.7mm_M2.5_Pad (layer F.Cu) (tedit 5D08A172) (tstamp 5D00AC31)
     (at 127 29.21)
     (descr "Mounting Hole 2.7mm, M2.5")
     (tags "mounting hole 2.7mm m2.5")
     (attr virtual)
-    (fp_text reference REF** (at 0 -3.7) (layer F.SilkS)
+    (fp_text reference REF** (at 0 -3.7) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value MountingHole_2.7mm_M2.5_Pad (at 0 3.7) (layer F.Fab) hide
