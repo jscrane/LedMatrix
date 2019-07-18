@@ -1,8 +1,8 @@
 #include <SimpleTimer.h> 
 #include <LedMatrix.h> 
  
-const uint8_t anodes[] = { 9, 14, 15, 16, 17, 18, 10 }; 
-const uint8_t gnds[] = { 8, 7, 6, 5, 4, 3, 2 }; 
+const uint8_t anodes[] = { 18, 17, 16, 15, 14, 12, 11, 10 };
+const uint8_t gnds[] = { 9, 8, 7, 6, 5, 4, 3, 2 };
  
 LedMatrix leds(sizeof(anodes), anodes, gnds); 
 SimpleTimer timer; 

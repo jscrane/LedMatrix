@@ -7,29 +7,40 @@ const uint8_t gnds[] = { 9, 8, 7, 6, 5, 4, 3, 2 };
 LedMatrix leds(sizeof(anodes), anodes, gnds);
 SimpleTimer timer;
 
-const uint8_t X[] = {
-	0b10000001,
-	0b01000010,
-	0b00100100,
+const uint8_t A[] = {
 	0b00011000,
-	0b00011000,
+	0b00111100,
+	0b01111110,
+	0b11011011,
+	0b11111111,
 	0b00100100,
+	0b01011010,
+	0b10100101,
+};
+
+const uint8_t B[] = {
+	0b00011000,
+	0b00111100,
+	0b01111110,
+	0b11011011,
+	0b11111111,
+	0b01011010,
+	0b10100101,
 	0b01000010,
-	0b10000001,
 };
 
 void next_bitmap() {
 	static bool b;
 	if (b)
-		leds.bitmap(X);
+		leds.bitmap(A);
 	else
-		leds.clear();
+		leds.bitmap(B);
 	b = !b;
 }
 
 void setup() {
 	leds.begin();
-	leds.bitmap(X);
+	leds.bitmap(A);
 	timer.setInterval(1000, next_bitmap);
 }
 
